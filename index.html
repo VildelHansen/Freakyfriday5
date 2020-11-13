@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight booking site</title>
+    <style>
+
+        unav{
+            list-style-type: none;
+            margin:0;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            border: 1px white;
+            overflow: hidden;
+            background-color: #222;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 5px 5px 20px rgba(93, 90, 90, 0.7);
+        }
+
+
+
+        nav i{float: left;}
+
+        nav a{
+            display:inline;
+            color: white;
+            padding: 6px 18px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+        body{
+            font-family: Calibri;
+            font-size: 18px;
+
+        }
+        .page-wrap{
+            max-width: 100%;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        .pagewrap-overlay{
+            background-color:#222;
+            position: absolute;
+            z-index: -1;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+        .content{
+            width: 600px;
+            margin: 0 auto;
+            padding: 10vh 0;
+        }
+        header{
+            background-color: transparent;
+            width: 100%;
+            height: 150px;
+            color: white;
+            text-align: center;
+            position:relative;
+
+        }
+
+
+        header h1{
+            text-transform: uppercase;
+            font-size: 43px;
+            letter-spacing:8px;
+        }
+        .header.content{
+            position: absolute;
+            top:40%;
+            left:40%;
+            transform: translate(-50%,-50%);
+        }
+        .Fly{
+            font-weight:600;
+        }
+        section{
+            position: relative;
+            height: 500px;
+        }
+        form{
+            margin: 0 auto;
+            max-width: 100%;
+            background-color: #222;
+            height: 100%;
+            opacity: 0.8;
+            padding: 60px 0px;
+            box-shadow: 0 19px 39px rgba(0,0,0,0.30), 0 19px 39px rgba(0,0,0,0.30);
+
+        }
+        input,select{
+            display: block;
+            width: 70%;
+            height: 60px;
+            background:white;
+            position: center;
+            margin: 60px;
+
+        }
+        button{
+            display: block;
+            width: 40%;
+            height:40px;
+            background:white;
+            position: absolute;
+            margin: 70px;
+            letter-spacing:2px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+<unav>
+    <img src="src/images/SASlogoo.PNG">
+    <nav i><a class="active" href #hjem>Hjem</a></nav>
+    <nav i><a href="#Reiseinfo">Reiseinfo</a></nav>
+    <nav i><a href="#minebestiller">Mine bestillinger</a></nav>
+    <nav i><a href="#logginn">Logg inn</a></nav>
+
+</unav>
+
+
+<div class="pagewrap" style="background: url(src/images/Flight.jpeg);background-size: cover;">
+    <div class= "pagewrap-overlay"></div>
+    <div class="content">
+        <header>
+            <div class="header content">
+                <h1><span class="Fly"> Bestill reise </span></h1>
+
+            </div>
+            <div class ="slanted"></div>
+        </header>
+        <section style="background-image:url(src/images/Flight.jpeg);background-size: cover;">
+            <form>
+                <div class="name input">
+                    <input type="text"class="name" placeholder="Flyplass eller by jeg vil reise fra:">
+                </div>
+
+                <div class="name input">
+                <input type="text"class="name" placeholder="Flyplass eller by jeg vil reise til:">
+                   <span><button>Søk og bestill</button></span>
+            </div>
+
+            </form>
+
+        </section>
+
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
