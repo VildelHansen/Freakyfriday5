@@ -31,6 +31,11 @@
             text-align: center;
             text-decoration: none;
         }
+       nav a:hover {
+           color: #2a2859;
+           cursor: pointer;
+       }
+
 
         *{
             box-sizing: border-box;
@@ -40,6 +45,7 @@
         body{
             font-family: Calibri;
             font-size: 18px;
+            color:black;
 
         }
         .page-wrap{
@@ -73,12 +79,6 @@
 
         }
 
-
-        header h1{
-            text-transform: uppercase;
-            font-size: 43px;
-            letter-spacing:8px;
-        }
         .header.content{
             position: absolute;
             top:40%;
@@ -92,33 +92,55 @@
             position: relative;
             height: 500px;
         }
+
         form{
             margin: 0 auto;
             max-width: 100%;
-            background-color: #222;
+            background-color: rgba(0,0,0,0.7);
             height: 100%;
-            opacity: 0.8;
             padding: 60px 0px;
             box-shadow: 0 19px 39px rgba(0,0,0,0.30), 0 19px 39px rgba(0,0,0,0.30);
+
+        }
+
+
+        h1{
+            text-transform:uppercase;
+            font-size: 32px;
+            letter-spacing:2px;
+            position: absolute;
+            margin-top: 0.5px;
+            margin-left: 60px;
+            color:white;
 
         }
         input,select{
             display: block;
             width: 70%;
             height: 60px;
-            background:white;
+            background-color:white;
             position: center;
             margin: 60px;
 
+
         }
         button{
+            text-transform:uppercase;
             display: block;
             width: 40%;
             height:40px;
-            background:white;
+            border-radius: 5px;
+            border: solid #2a2859 2px;
+            background-color: white;
             position: absolute;
             margin: 70px;
             letter-spacing:2px;
+
+        }
+        button:hover {
+            color:white;
+            cursor: pointer;
+            background-color: #2a2859;
         }
 
 
@@ -143,20 +165,21 @@
     <div class="content">
         <header>
             <div class="header content">
-                <h1><span class="Fly"> Bestill reise </span></h1>
+
 
             </div>
             <div class ="slanted"></div>
         </header>
-        <section style="background-image:url(src/images/Flight.jpeg);background-size: cover;">
+        <section>
             <form>
+                <h1><span class="Fly"> Bestill reise </span></h1>
                 <div class="name input">
-                    <input type="text"class="name" placeholder="Flyplass eller by jeg vil reise fra:">
+                   <span><input type="text"class="name" placeholder="Flyplass eller by jeg vil reise fra:"></span>
                 </div>
 
                 <div class="name input">
-                <input type="text"class="name" placeholder="Flyplass eller by jeg vil reise til:">
-                   <span><button>Søk og bestill</button></span>
+               <span><input type="text"class="name" placeholder="Flyplass eller by jeg vil reise til:"></span>
+                    <span><button>Søk og bestill</button></span>
             </div>
 
             </form>
